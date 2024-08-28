@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopta una Mascota</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Adopta una Mascota</h1>
+
+        <form action="registro_exitoso.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <select id="ciudad" name="ciudad" required>
+                    <option value="" disabled selected>Selecciona tu ciudad</option>
+                    <option value="chiapas">Chiapas</option>
+                    <option value="ciudad de méxico">Ciudad de México</option>
+                    <option value="hidalgo">Hidalgo</option>    
+                    <option value="michoacan">Michoacan</option>
+                    <option value="oaxaca">Oaxaca</option>
+                    <option value="puebla">Puebla</option> 
+                    <option value="tabasco">Tabasco</option>
+                    <option value="tlaxcala">Tlaxcala</option>
+                    <option value="veracruz">Veracruz</option>
+                </select>
+            </div>
+
+            <h2>Selecciona una Mascota</h2>
+            <table>
+                <tr>
+                    <td><img src="/imagenes/perro.jpg" alt="Perro"></td>
+                    <td><img src="/imagenes/gato.jpeg" alt="Gato"></td>
+                    <td><img src="/imagenes/erizo.jpeg" alt="Erizo"></td>
+                    <td><img src="/imagenes/nutria.jpg" alt="Nutria"></td>
+                    <td><img src="/imagenes/perico.jpeg" alt="Perico"></td>
+                    <td><img src="imagenes/pescado.jpg" alt="Pescado"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>
+                            <input type="radio" name="mascota" value="perro" required>
+                            Perro
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="mascota" value="gato">
+                            Gato
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="mascota" value="erizo">
+                            Erizo
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="mascota" value="nutria">
+                            Nutria
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="mascota" value="loro">
+                            Loro
+                        </label>
+                    </td>
+                    <td>
+                        <label>
+                            <input type="radio" name="mascota" value="pescado">
+                            Pescado
+                        </label>
+                    </td>
+                </tr>
+            </table>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+| Nombre               | Ciudad               | Mascota              |
+------------------------------------------------------------------
+| Marco Antonio        | ciudad de méxico    | nutria               |
+| Mariana Areli        | tabasco              | loro                 |
+| Samuel               | oaxaca               | pescado              |
